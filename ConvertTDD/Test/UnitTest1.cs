@@ -60,6 +60,14 @@ namespace Test
             double res = 100 * 5280;
             Assert.AreEqual(res, value);
         }
+        [TestMethod]
+        public void TestFtToMile()
+        {
+            Converter converter = new Converter();
+            var value = converter.FtToMile(100);
+            double res = 100 / 5280;
+            Assert.AreEqual(res, value);
+        }
     }
 
 }
