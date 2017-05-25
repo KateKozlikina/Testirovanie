@@ -43,6 +43,15 @@ namespace Test
             double res = 100 * 3.281;
             Assert.AreEqual(res, value);
         }
+
+        [TestMethod]
+        public void TestFtToMetr()
+        {
+            Converter converter = new Converter();
+            var value = converter.FtToMetr(100);
+            double res = 100 / 3.281;
+            Assert.AreEqual(res, value);
+        }
     }
 
 }
