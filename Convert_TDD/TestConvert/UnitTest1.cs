@@ -20,5 +20,14 @@ namespace TestConvert
             Assert.AreEqual(62.14, value);
         }
 
+        [TestMethod]
+        public void MileToMetr()
+        {
+            Converter converter = new Converter();
+            var value = converter.MileToMetr(100);
+            double res = 100 / 0.0006214;
+            Assert.AreEqual(res, value);
+        }
+
     }
 }
