@@ -28,5 +28,9 @@ public    class Converter
         {
             return v / MetrTOFt;
         }
+        public object MileToFt(int v)
+        {
+            return v * MileTOFt;
+        }
     }
 }
