@@ -29,7 +29,14 @@ namespace TestConvert
             Assert.AreEqual(res, value);
         }
 
-
+        [TestMethod]
+        public void MetrToFt()
+        {
+            Converter converter = new Converter();
+            var value = converter.MetrToFt(100);
+            double res = 100 * 3.281;
+            Assert.AreEqual(res, value);
+        }
 
     }
 }
