@@ -16,7 +16,7 @@ namespace TestConvert
         public void TestMetrToMile()
         {
             Converter converter = new Converter();
-            var value = converter.MetrToMile(100);
+            var value = converter.MetrToMile(100000);
             Assert.AreEqual(62.14, value);
         }
 
