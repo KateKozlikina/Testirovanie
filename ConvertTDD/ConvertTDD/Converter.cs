@@ -16,23 +16,23 @@ public    class Converter
             return metr * MetrTOMile;
         }
 
-        public object MileToMetr(int v)
+        public object MileToMetr(double v)
         {
             return v / MetrTOMile;
         }
-        public object MetrToFt(int v)
+        public object MetrToFt(double v)
         {
             return v * MetrTOFt;
         }
-        public object FtToMetr(int v)
+        public object FtToMetr(double v)
         {
             return v / MetrTOFt;
         }
-        public object MileToFt(int v)
+        public object MileToFt(double v)
         {
             return v * MileTOFt;
         }
-        public object FtToMile(int v)
+        public object FtToMile(double v)
         {
             return v / MileTOFt;
         }
