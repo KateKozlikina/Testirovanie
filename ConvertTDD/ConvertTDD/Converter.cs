@@ -15,5 +15,10 @@ public    class Converter
         {
             return metr * MetrTOMile;
         }
+
+        public object MileToMetr(int v)
+        {
+            return v / MetrTOMile;
+        }
     }
 }
