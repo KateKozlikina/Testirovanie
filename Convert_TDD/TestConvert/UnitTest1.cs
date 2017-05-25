@@ -21,7 +21,7 @@ namespace TestConvert
         }
 
         [TestMethod]
-        public void MileToMetr()
+        public void TestMileToMetr()
         {
             Converter converter = new Converter();
             var value = converter.MileToMetr(100);
@@ -30,13 +30,23 @@ namespace TestConvert
         }
 
         [TestMethod]
-        public void MetrToFt()
+        public void TestMetrToFt()
         {
             Converter converter = new Converter();
             var value = converter.MetrToFt(100);
             double res = 100 * 3.281;
             Assert.AreEqual(res, value);
         }
+
+        [TestMethod]
+        public void TestFtToMetr()
+        {
+            Converter converter = new Converter();
+            var value = converter.FtToMetr(100);
+            double res = 100 / 3.281;
+            Assert.AreEqual(res, value);
+        }
+
 
     }
 }
